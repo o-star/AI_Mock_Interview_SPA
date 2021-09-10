@@ -3,19 +3,13 @@ import Introduction from "./pages/Introduction.js"
 import JobInfo from "./pages/JobInfo.js"
 
 import "../css/Home.css"
+import "../css/Introduction.css"
 
 const rootElement = document.querySelector("#root")
-const cssPath = './assets/css/'
 const routes = {
   '/': Home,
   '/introduction': Introduction,
   '/job-infos': JobInfo
-}
-
-// add css file
-const addCSS = (cssName) => {
-  let cssElement = document.querySelector("#org-css")
-  cssElement.setAttribute("href", cssPath + `${cssName.substring(1)}.css`)
 }
 
 // router element event add
@@ -32,7 +26,6 @@ const setRouterEvent = () => {
 //move url
 const historyRouterPush = (pathName, element) => {
   window.history.pushState({}, pathName, window.location.origin + pathName)
-  addCSS(pathName)
   renderHTML(element, routes[pathName])
   setRouterEvent()
 }
@@ -46,8 +39,6 @@ window.onload = () => {
   renderHTML(rootElement, routes['/'])
 
   window.onpopstate = () => {
-    const cssName = (window.location.pathname === "/") ? "/index" : window.location.pathname
-    addCSS(cssName)
     renderHTML(rootElement, routes[window.location.pathname])
     setRouterEvent()
   }

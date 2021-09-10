@@ -1,8 +1,8 @@
 const Introduction = `
-<div id='main-header'>
-<div id='main-title'>Introduction</div>
-<div id='sub-title'>AI MOCK INTERVIEW SYSTEM</div>
-<div id='scroll-guide'>scroll<div>▽</div>
+<div id="main-header">
+<div id="intro-title">Introduction</div>
+<div id="intro-sub-title">AI MOCK INTERVIEW SYSTEM</div>
+<div id="scroll-guide">scroll<div>▽</div>
 </div>
 </div>
 <div id='first-section'>
