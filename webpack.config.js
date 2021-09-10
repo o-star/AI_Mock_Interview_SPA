@@ -1,3 +1,6 @@
+const { CleanWebpackPlugin } = require("clean-webpack-plugin")
+const webpack = require("webpack")
+
 module.exports = {
   entry: "./assets/js/index.js",
   output: {
@@ -11,5 +14,15 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       }
     ]
-  }
+  },
+  plugins: [
+    new CleanWebpackPlugin(),
+    new webpack.BannerPlugin({
+      banner: `
+      Build Date :: ${new Date().toLocaleString()}
+      Auth Name :: Ostar
+      Auth Github :: https://github.com/o-star
+      `
+    })
+  ]
 }

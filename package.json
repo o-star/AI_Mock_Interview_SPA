@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/o-star/AI_Mock_Interview_SPA#readme",
   "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.2.0",
     "style-loader": "^3.2.1",
     "webpack": "^5.52.1",

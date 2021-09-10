@@ -1,6 +1,7 @@
-body {
-  display: flex;
-  justify-content: center;
+#home-wrapper {
+  /* background-image: url('../images/index_background.jpg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #main-content {
