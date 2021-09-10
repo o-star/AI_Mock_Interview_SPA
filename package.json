@@ -1,0 +1,27 @@
+{
+  "name": "AI_Mock_Interview_SPA",
+  "version": "1.0.0",
+  "description": "<br/>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/o-star/AI_Mock_Interview_SPA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/o-star/AI_Mock_Interview_SPA/issues"
+  },
+  "homepage": "https://github.com/o-star/AI_Mock_Interview_SPA#readme",
+  "devDependencies": {
+    "css-loader": "^6.2.0",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.52.1",
+    "webpack-cli": "^4.8.0"
+  }
+}

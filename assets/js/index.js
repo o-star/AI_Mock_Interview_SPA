@@ -2,6 +2,8 @@ import Home from "./pages/Home.js"
 import Introduction from "./pages/Introduction.js"
 import JobInfo from "./pages/JobInfo.js"
 
+import "../css/Home.css"
+
 const rootElement = document.querySelector("#root")
 const cssPath = './assets/css/'
 const routes = {

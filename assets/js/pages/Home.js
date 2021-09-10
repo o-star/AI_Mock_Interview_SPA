@@ -14,7 +14,6 @@ const Home = `
       </div>
     </div>
   </div>
-  <script src="./assets/js/Home.js"></script>
 `
 
 export default Home
