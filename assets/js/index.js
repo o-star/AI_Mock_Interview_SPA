@@ -4,6 +4,7 @@ import JobInfo from "./pages/JobInfo.js"
 
 import "../css/Home.css"
 import "../css/Introduction.css"
+import "../css/JobInfo.css"
 
 const rootElement = document.querySelector("#root")
 const routes = {

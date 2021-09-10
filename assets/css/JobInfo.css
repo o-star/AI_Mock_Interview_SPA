@@ -4,7 +4,7 @@ html, body {
     width: 100%;
 }
 
-#main-header {
+#job-info-header {
     width: 100%;
     height: 150px;
     background-color: #1e2036;
@@ -13,14 +13,14 @@ html, body {
     justify-content: center;
 }
 
-#main-header div {
+#job-info-header div {
     color: white;
     font-size: 2rem;
     font-weight: 650;
     letter-spacing: 10px;
 }
 
-#main-contents {
+#job-info-contents {
     height: 90%;
     margin: 0;
     list-style: none;
@@ -30,14 +30,14 @@ html, body {
     justify-content: center;
 }
 
-#main-contents li {
+#job-info-contents li {
     display: flex;
     align-items: center;
     padding: 20px 20%;
     opacity: 0;
 }
 
-.text-section {
+.job-text-section {
     padding-left: 20px;
 }
 
