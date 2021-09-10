@@ -1,7 +1,0 @@
-/*!
- * 
- *       Build Date :: 2021. 9. 10. 오후 11:36:27
- *       Auth Name :: Ostar
- *       Auth Github :: https://github.com/o-star
- *
- */
