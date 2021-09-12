@@ -2,20 +2,24 @@ import Home from "./pages/Home.js"
 import Introduction from "./pages/Introduction.js"
 import JobInfo from "./pages/JobInfo.js"
 import Tutorial from "./pages/Tutorial.js"
+import InterviewSetting from "./pages/InterviewSetting.js"
 
 import handleTutorial from "./modules/handleTutorial.js"
+import handleSetting from "./modules/handleSetting.js"
 
 import "../css/Home.css"
 import "../css/Introduction.css"
 import "../css/JobInfo.css"
 import "../css/Tutorial.css"
+import "../css/InterviewSetting.css"
 
 const rootElement = document.querySelector("#root")
 const routes = {
   '/': Home,
   '/introduction': Introduction,
   '/job-infos': JobInfo,
-  '/tutorial': Tutorial
+  '/tutorial': Tutorial,
+  '/setting': InterviewSetting,
 }
 
 // router element event add
@@ -36,6 +40,8 @@ const historyRouterPush = (pathName, element) => {
 
   if (pathName == '/tutorial') {
     handleTutorial()
+  } else if (pathName == '/setting') {
+    handleSetting()
   }
 
   setRouterEvent()
