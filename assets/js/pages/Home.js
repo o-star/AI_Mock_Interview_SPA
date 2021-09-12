@@ -8,7 +8,7 @@ const Home = `
         <button class="button-style router" route="/introduction">Introduction</button>
       </div>
       <div class="button-item">
-        <button class="button-style router" route="/interview">Interview Start</button>
+        <button class="button-style router" route="/tutorial">Interview Start</button>
       </div>
       <div class="button-item">
         <button class="button-style router" route="/job-infos">Other Job Infos</button>
