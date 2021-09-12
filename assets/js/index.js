@@ -3,6 +3,7 @@ import Introduction from "./pages/Introduction.js"
 import JobInfo from "./pages/JobInfo.js"
 import Tutorial from "./pages/Tutorial.js"
 import InterviewSetting from "./pages/InterviewSetting.js"
+import InterviewStarter from "./pages/InterviewStarter.js"
 
 import handleTutorial from "./modules/handleTutorial.js"
 import handleSetting from "./modules/handleSetting.js"
@@ -12,6 +13,7 @@ import "../css/Introduction.css"
 import "../css/JobInfo.css"
 import "../css/Tutorial.css"
 import "../css/InterviewSetting.css"
+import "../css/InterviewStarter.css"
 
 const rootElement = document.querySelector("#root")
 const routes = {
@@ -20,6 +22,7 @@ const routes = {
   '/job-infos': JobInfo,
   '/tutorial': Tutorial,
   '/setting': InterviewSetting,
+  '/starter': InterviewStarter
 }
 
 // router element event add
