@@ -5,7 +5,7 @@ module.exports = {
   entry: "./assets/js/index.js",
   output: {
     path: __dirname + "/dist",
-    filename: "build.js"
+    filename: "build.js",
   },
   module: {
     rules: [
@@ -16,7 +16,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(),
+    // new CleanWebpackPlugin(),
     new webpack.BannerPlugin({
       banner: `
       Build Date :: ${new Date().toLocaleString()}
@@ -24,5 +24,14 @@ module.exports = {
       Auth Github :: https://github.com/o-star
       `
     })
-  ]
+  ],
+  devServer: {
+    static: {
+      directory: __dirname
+    },
+    host: "localhost",
+    port: 3000,
+    historyApiFallback: true,
+    hot: true
+  }
 }
