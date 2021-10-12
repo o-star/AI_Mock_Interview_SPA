@@ -1,4 +1,6 @@
-# AI_Mock_Interview_System
+# AI_Mock_Interview_SPA
+
+AI 모의 면접 사이트 Single Page Application으로 만들어보기
 
 <br/>
 
@@ -10,10 +12,8 @@
 
 ### Description
 
-- **최근 코로나의 영향은 채용 시장에서도 많은 변화를 일으켰다. 대표적인 변화로는 비대면 방식의 AI 면접을 예로 들 수 있다. AI 면접은 면접관들의 주관이 개입되지 않고 지원자의 행동패턴만을 가지고 평가가 이뤄지는 비대면 면접 형식을 일컫는다.**
-- **본 웹 페이지는 최근 새롭게 생겨나고 있는 AI 면접 방식을 취업준비생들이 편하게 준비할 수 있도록 모의 면접 과정을 진행해볼 수 있는 시스템이다.**
-- **구체적으로 AI가 취업준비생들의 답변 영상을 어떻게 평가하는지에 관해서는 확인해 볼 수 없으나 취업준비생이 직접 랜덤으로 주어지는 취업질문들에 즉석으로 대답해보고 본인의 답변 녹화 영상을 확인해 보며 효과적으로 면접을 준비할 수 있도록 도움을 준다.**
-- **본 시스템은 AI 면접 뿐만 아니라 일반 대면 면접 또한 준비할 수 있도록 다양한 질문들을 제공하고 시스템을 실행해볼 수 있다.**
+- **기존 개발하엿떤 AI 모의 면접 사이트를 History 객체와 Webpack 등을 활용하여 프레임워크, 라이브러리 없이 Single Page Application으로 개발해보았다.**
+- **내부 페이지 개발 코드는 [AI_Mock_Interview_System](https://github.com/o-star/AI_Mock_Interview_System)과 동일하나 Single Page로 제작하는 과정에서 index.html 하나의 html 파일과 Webpack을 통해 모듈 번들링을 진행한 build.js 하나의 Javascript 파일로 페이지가 실행된다.**
 
 <br/>
 
@@ -23,9 +23,16 @@
 
 ***
 
-### Usage Environment
+### Usage
 
-본 웹페이지는 Chrome 브라우저에 맞춤화되어 제작되었으므로 본 페이지를 이용할 시 Chrome 환경에서 이용하는 것을 권장한다.
+**본 웹페이지는 Chrome 브라우저에 맞춤화되어 제작되었으므로 본 페이지를 이용할 시 Chrome 환경에서 이용하는 것을 권장한다.**
+
+**Webpack Build**
+
+```
+npm run build
+// dist 디렉토리 생성, github 코드에는 build.js가 포함되어있지 않기 때문에 반드시 Webpack build 후 사용하기
+```
 
 <br/>
 
