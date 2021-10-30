@@ -1,4 +1,5 @@
 const { CleanWebpackPlugin } = require("clean-webpack-plugin")
+const HtmlWebpackPlugin = require("html-webpack-plugin")
 const webpack = require("webpack")
 
 module.exports = {
@@ -21,14 +22,18 @@ module.exports = {
     ]
   },
   plugins: [
-    // new CleanWebpackPlugin(),
     new webpack.BannerPlugin({
       banner: `
       Build Date :: ${new Date().toLocaleString()}
       Auth Name :: Ostar
       Auth Github :: https://github.com/o-star
       `
+    }),
+    new HtmlWebpackPlugin({
+      template: './assets/index.html',
+      filename: './index.html'
     })
+    // new CleanWebpackPlugin(),
   ],
   devServer: {
     static: {
